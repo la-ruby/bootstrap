@@ -37,6 +37,7 @@ $grays: (
 
 // scss-docs-start color-variables
 $blue:    #0d6efd !default;
+$brandblue:    #1aafd0 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
@@ -51,6 +52,7 @@ $cyan:    #0dcaf0 !default;
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
+  "brandblue": $brandblue,
   "indigo":     $indigo,
   "purple":     $purple,
   "pink":       $pink,
@@ -69,7 +71,7 @@ $colors: (
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$min-contrast-ratio:   2.5 !default;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;
@@ -299,6 +301,7 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
+$brandprimary:       $brandblue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -311,6 +314,7 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+  "brandprimary": $brandprimary,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -406,7 +410,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $brandprimary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -696,6 +700,7 @@ $table-bg-scale:              -80% !default;
 // scss-docs-start table-loop
 $table-variants: (
   "primary":    shift-color($primary, $table-bg-scale),
+  "brandprimary":    shift-color($primary, $table-bg-scale),
   "secondary":  shift-color($secondary, $table-bg-scale),
   "success":    shift-color($success, $table-bg-scale),
   "info":       shift-color($info, $table-bg-scale),
